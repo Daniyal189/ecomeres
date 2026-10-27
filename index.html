@@ -3,107 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATTITUDE FASHION | Premium Pakistani Clothing</title>
-    <!-- Google Fonts & FontAwesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>ATTITUDE FASHION | 50 Fusion Pakistani Outfits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
-        /* CSS RESET & VARIABLES */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
 
         :root {
-            --primary-color: #1a1a1a;
-            --accent-color: #d4af37;
-            --light-bg: #f8f9fa;
-            --border-color: #e2e8f0;
-            --text-muted: #6c757d;
+            --primary: #111111;
+            --secondary: #555555;
+            --accent: #000000;
+            --bg-light: #fafafa;
+            --border: #eeeeee;
             --white: #ffffff;
-            --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s ease;
+            --transition: all 0.2s ease-in-out;
         }
 
         body {
-            background-color: #fff;
-            color: var(--primary-color);
+            background-color: var(--white);
+            color: var(--primary);
             overflow-x: hidden;
+            line-height: 1.5;
         }
 
-        /* ANNOUNCEMENT BAR */
         .top-bar {
-            background-color: var(--primary-color);
+            background-color: var(--primary);
             color: var(--white);
             text-align: center;
-            padding: 8px 15px;
+            padding: 10px 15px;
             font-size: 12px;
-            letter-spacing: 1px;
-            font-weight: 500;
+            letter-spacing: 0.5px;
+            font-weight: 400;
         }
 
-        /* NAVBAR */
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
             background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid var(--border);
         }
 
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 5%;
+            padding: 18px 5%;
             max-width: 1400px;
             margin: 0 auto;
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
             letter-spacing: 2px;
-            color: var(--primary-color);
+            color: var(--primary);
             text-decoration: none;
             text-transform: uppercase;
-        }
-
-        .logo span {
-            color: var(--accent-color);
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 30px;
         }
 
         .nav-link {
             text-decoration: none;
-            color: var(--primary-color);
+            color: var(--secondary);
             font-weight: 500;
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
             transition: var(--transition);
         }
 
         .nav-link:hover {
-            color: var(--accent-color);
+            color: var(--primary);
         }
 
         .search-box {
             display: flex;
             align-items: center;
-            background: var(--light-bg);
-            border-radius: 20px;
-            padding: 6px 15px;
-            border: 1px solid var(--border-color);
-            width: 250px;
+            background: var(--bg-light);
+            border-radius: 4px;
+            padding: 8px 14px;
+            border: 1px solid var(--border);
+            width: 240px;
         }
 
         .search-box input {
@@ -113,6 +105,7 @@
             width: 100%;
             font-size: 13px;
             margin-left: 8px;
+            color: var(--primary);
         }
 
         .nav-icons {
@@ -124,26 +117,26 @@
         .icon-btn {
             background: none;
             border: none;
-            font-size: 18px;
-            color: var(--primary-color);
+            font-size: 17px;
+            color: var(--primary);
             cursor: pointer;
             position: relative;
             transition: var(--transition);
         }
 
         .icon-btn:hover {
-            color: var(--accent-color);
+            opacity: 0.7;
         }
 
         .badge {
             position: absolute;
             top: -6px;
             right: -8px;
-            background: var(--accent-color);
+            background: var(--primary);
             color: var(--white);
-            font-size: 10px;
-            width: 18px;
-            height: 18px;
+            font-size: 9px;
+            width: 16px;
+            height: 16px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -151,100 +144,101 @@
             font-weight: 600;
         }
 
-        /* HERO SECTION */
         .hero {
-            height: 75vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            height: 55vh;
+            background: #f4f4f4;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: var(--white);
+            color: var(--primary);
             padding: 0 20px;
+            border-bottom: 1px solid var(--border);
         }
 
         .hero-content h1 {
-            font-size: 48px;
-            font-weight: 700;
+            font-size: 34px;
+            font-weight: 600;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             letter-spacing: 2px;
         }
 
         .hero-content p {
-            font-size: 18px;
+            font-size: 15px;
             margin-bottom: 25px;
-            font-weight: 300;
+            color: var(--secondary);
+            font-weight: 400;
         }
 
         .btn-primary {
             display: inline-block;
-            background: var(--accent-color);
+            background: var(--primary);
             color: var(--white);
-            padding: 12px 35px;
-            border-radius: 30px;
+            padding: 12px 32px;
+            border-radius: 2px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
+            font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border: 2px solid var(--accent-color);
-            cursor: pointer;
             transition: var(--transition);
         }
 
         .btn-primary:hover {
-            background: transparent;
-            color: var(--white);
+            background: var(--secondary);
         }
 
-        /* CATEGORIES & FILTER BAR */
         .section-title {
             text-align: center;
             margin: 50px 0 20px;
         }
 
         .section-title h2 {
-            font-size: 32px;
+            font-size: 24px;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
+            color: var(--primary);
         }
 
         .section-title p {
-            color: var(--text-muted);
-            font-size: 14px;
+            color: var(--secondary);
+            font-size: 13px;
+            margin-top: 5px;
         }
 
         .filter-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
             padding: 10px 5%;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .filter-btn {
-            background: var(--light-bg);
-            border: 1px solid var(--border-color);
-            padding: 8px 18px;
-            border-radius: 20px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            padding: 7px 16px;
+            border-radius: 3px;
             cursor: pointer;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 500;
+            color: var(--secondary);
             transition: var(--transition);
         }
 
         .filter-btn.active, .filter-btn:hover {
-            background: var(--primary-color);
+            background: var(--primary);
             color: var(--white);
-            border-color: var(--primary-color);
+            border-color: var(--primary);
         }
 
-        /* PRODUCT GRID */
         .products-section {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 5% 60px;
+            padding: 0 5% 70px;
         }
 
         .products-grid {
@@ -255,79 +249,76 @@
 
         .product-card {
             background: var(--white);
-            border-radius: 8px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
             overflow: hidden;
-            border: 1px solid var(--border-color);
             transition: var(--transition);
-            position: relative;
             display: flex;
             flex-direction: column;
         }
 
         .product-card:hover {
-            box-shadow: var(--shadow);
-            transform: translateY(-5px);
+            border-color: #cccccc;
         }
 
         .product-image {
             position: relative;
-            height: 320px;
+            height: 330px;
             overflow: hidden;
-            background: #eee;
+            background: #f8f8f8;
         }
 
         .product-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top center;
             transition: var(--transition);
         }
 
         .product-card:hover .product-image img {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .product-badge {
             position: absolute;
             top: 10px;
             left: 10px;
-            background: var(--primary-color);
+            background: var(--primary);
             color: var(--white);
-            font-size: 10px;
-            padding: 4px 8px;
-            border-radius: 3px;
+            font-size: 9px;
+            padding: 3px 7px;
+            border-radius: 2px;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
 
         .product-details {
-            padding: 15px;
+            padding: 14px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
 
         .product-category {
-            font-size: 11px;
-            color: var(--text-muted);
+            font-size: 10px;
+            color: var(--secondary);
             text-transform: uppercase;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
         }
 
         .product-title {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--primary-color);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .product-rating {
-            color: #ffc107;
-            font-size: 12px;
+            font-size: 13px;
+            font-weight: 500;
             margin-bottom: 10px;
+            color: var(--primary);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.4;
         }
 
         .product-price-row {
@@ -335,45 +326,50 @@
             justify-content: space-between;
             align-items: center;
             margin-top: auto;
+            padding-top: 8px;
+            border-top: 1px solid var(--bg-light);
         }
 
         .price {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--primary-color);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
         }
 
         .add-cart-btn {
-            background: var(--primary-color);
-            color: var(--white);
-            border: none;
-            width: 36px;
-            height: 36px;
+            background: var(--bg-light);
+            color: var(--primary);
+            border: 1px solid var(--border);
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 12px;
             transition: var(--transition);
         }
 
         .add-cart-btn:hover {
-            background: var(--accent-color);
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
         }
 
-        /* CART DRAWER */
         .cart-drawer {
             position: fixed;
             top: 0;
             right: -400px;
-            width: 380px;
+            width: 360px;
             height: 100%;
             background: var(--white);
-            box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+            box-shadow: -5px 0 20px rgba(0,0,0,0.05);
             z-index: 2000;
-            transition: right 0.4s ease;
+            transition: right 0.3s ease;
             display: flex;
             flex-direction: column;
+            border-left: 1px solid var(--border);
         }
 
         .cart-drawer.open {
@@ -382,21 +378,24 @@
 
         .cart-header {
             padding: 20px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .cart-header h3 {
-            font-size: 18px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
         }
 
         .close-cart {
             background: none;
             border: none;
-            font-size: 20px;
+            font-size: 18px;
             cursor: pointer;
+            color: var(--secondary);
         }
 
         .cart-body {
@@ -407,69 +406,71 @@
 
         .cart-item {
             display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 14px;
         }
 
         .cart-item img {
-            width: 70px;
-            height: 80px;
+            width: 60px;
+            height: 70px;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 2px;
         }
 
         .cart-item-details h4 {
-            font-size: 13px;
-            margin-bottom: 5px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 4px;
         }
 
         .cart-item-price {
             font-weight: 600;
-            font-size: 14px;
-            color: var(--accent-color);
+            font-size: 13px;
+            color: var(--primary);
         }
 
         .cart-footer {
             padding: 20px;
-            border-top: 1px solid var(--border-color);
-            background: var(--light-bg);
+            border-top: 1px solid var(--border);
+            background: var(--bg-light);
         }
 
         .cart-total {
             display: flex;
             justify-content: space-between;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 14px;
         }
 
         .checkout-btn {
             width: 100%;
             padding: 12px;
-            background: var(--primary-color);
+            background: var(--primary);
             color: var(--white);
             border: none;
-            border-radius: 4px;
-            font-weight: 600;
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 12px;
             text-transform: uppercase;
+            letter-spacing: 1px;
             cursor: pointer;
             transition: var(--transition);
         }
 
         .checkout-btn:hover {
-            background: var(--accent-color);
+            background: var(--secondary);
         }
 
-        /* AUTH MODALS (SIGN IN / SIGN UP) */
         .modal-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.4);
             z-index: 3000;
             display: flex;
             align-items: center;
@@ -486,11 +487,11 @@
 
         .auth-card {
             background: var(--white);
-            width: 400px;
+            width: 360px;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 4px;
             position: relative;
-            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
 
         .close-modal {
@@ -499,82 +500,90 @@
             right: 15px;
             background: none;
             border: none;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
+            color: var(--secondary);
         }
 
         .auth-card h2 {
             text-align: center;
             margin-bottom: 20px;
-            font-size: 22px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
         .form-group label {
             display: block;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 5px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-bottom: 4px;
             text-transform: uppercase;
+            color: var(--secondary);
         }
 
         .form-group input {
             width: 100%;
             padding: 10px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
+            border: 1px solid var(--border);
+            border-radius: 2px;
             outline: none;
             font-size: 13px;
         }
 
         .auth-btn {
             width: 100%;
-            padding: 12px;
-            background: var(--primary-color);
+            padding: 11px;
+            background: var(--primary);
             color: var(--white);
             border: none;
-            border-radius: 4px;
-            font-weight: 600;
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 12px;
+            text-transform: uppercase;
             cursor: pointer;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         .auth-switch {
             text-align: center;
-            margin-top: 15px;
-            font-size: 13px;
+            margin-top: 14px;
+            font-size: 12px;
+            color: var(--secondary);
         }
 
         .auth-switch a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
+            color: var(--primary);
+            text-decoration: underline;
+            font-weight: 500;
         }
 
-        /* FOOTER */
         footer {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 60px 5% 20px;
+            background: #fafafa;
+            color: var(--primary);
+            padding: 50px 5% 25px;
+            border-top: 1px solid var(--border);
         }
 
         .footer-grid {
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
 
         .footer-col h4 {
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
             letter-spacing: 1px;
-            color: var(--accent-color);
+            text-transform: uppercase;
         }
 
         .footer-col ul {
@@ -582,36 +591,34 @@
         }
 
         .footer-col ul li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-col ul li a {
-            color: #ccc;
+            color: var(--secondary);
             text-decoration: none;
             font-size: 13px;
             transition: var(--transition);
         }
 
         .footer-col ul li a:hover {
-            color: var(--white);
-            padding-left: 5px;
+            color: var(--primary);
         }
 
         .footer-bottom {
             text-align: center;
-            border-top: 1px solid #333;
+            border-top: 1px solid var(--border);
             padding-top: 20px;
             font-size: 12px;
-            color: #888;
+            color: var(--secondary);
         }
 
-        /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
             .nav-menu, .search-box {
                 display: none;
             }
             .hero-content h1 {
-                font-size: 32px;
+                font-size: 24px;
             }
             .cart-drawer {
                 width: 100%;
@@ -622,132 +629,110 @@
 </head>
 <body>
 
-    <!-- ANNOUNCEMENT BAR -->
     <div class="top-bar">
-        FREE SHIPPING ALL OVER PAKISTAN ON ORDERS ABOVE PKR 3,000! | CASH ON DELIVERY AVAILABLE
+        50 PAKISTANI FUSION DRESSES FOR MEN, WOMEN & KIDS | CASH ON DELIVERY ALL OVER PAKISTAN
     </div>
 
-    <!-- HEADER / NAVIGATION -->
     <header>
         <div class="navbar">
-            <a href="#" class="logo">ATTITUDE<span>.PK</span></a>
+            <a href="#" class="logo">ATTITUDE FASHION</a>
             
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#shop" class="nav-link">Unstitched</a></li>
-                <li><a href="#shop" class="nav-link">Ready To Wear</a></li>
-                <li><a href="#shop" class="nav-link">Men</a></li>
-                <li><a href="#shop" class="nav-link">Kids</a></li>
+                <li><a href="#shop" class="nav-link">Women Fusion</a></li>
+                <li><a href="#shop" class="nav-link">Men Fusion</a></li>
+                <li><a href="#shop" class="nav-link">Kids Fusion</a></li>
             </ul>
 
             <div class="search-box">
-                <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" placeholder="Search 50+ collections..." onkeyup="filterProducts()">
+                <i class="fas fa-search" style="color: #999;"></i>
+                <input type="text" id="searchInput" placeholder="Search fusion dresses..." onkeyup="filterProducts()">
             </div>
 
             <div class="nav-icons">
-                <button class="icon-btn" onclick="openAuthModal('signin')"><i class="far fa-user"></i></button>
-                <button class="icon-btn" onclick="alert('Wishlist is empty')"><i class="far fa-heart"></i><span class="badge">0</span></button>
-                <button class="icon-btn" onclick="toggleCart()"><i class="fas fa-shopping-bag"></i><span class="badge" id="cartCount">0</span></button>
+                <button class="icon-btn" onclick="openAuthModal('signin')" title="Account"><i class="far fa-user"></i></button>
+                <button class="icon-btn" onclick="alert('Wishlist is empty')" title="Wishlist"><i class="far fa-heart"></i><span class="badge">0</span></button>
+                <button class="icon-btn" onclick="toggleCart()" title="Cart"><i class="fas fa-shopping-bag"></i><span class="badge" id="cartCount">0</span></button>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Pakistani Luxury Fashion</h1>
-            <p>Explore 50 Exclusive Festive & Pret Collections Designed for You</p>
-            <a href="#shop" class="btn-primary">Shop Now</a>
+            <h1>50 Fusion Pakistani Outfits</h1>
+            <p>Indo-Western & Modern Minimalist Pakistani Wear for Women, Men & Kids</p>
+            <a href="#shop" class="btn-primary">Explore All 50 Designs</a>
         </div>
     </section>
 
-    <!-- PRODUCTS & FILTER SECTION -->
     <section class="section-title" id="shop">
-        <h2>Our Exclusive 50 Collections</h2>
-        <p>Premium Fabric | Hand Crafted | Delivered Worldwide</p>
+        <h2>50 Fusion Collection</h2>
+        <p>Peplum Tulip Shalwars, Denim Kurtas, Pre-Stitched Sarees & Kids Fusion</p>
     </section>
 
-    <!-- CATEGORY FILTER BUTTONS -->
     <div class="filter-container" id="filterContainer">
-        <button class="filter-btn active" onclick="filterCategory('All')">All (50)</button>
-        <button class="filter-btn" onclick="filterCategory('Unstitched')">Unstitched</button>
-        <button class="filter-btn" onclick="filterCategory('Ready To Wear')">Ready To Wear</button>
-        <button class="filter-btn" onclick="filterCategory('Men Wear')">Men's Wear</button>
-        <button class="filter-btn" onclick="filterCategory('Kids Wear')">Kids Wear</button>
-        <button class="filter-btn" onclick="filterCategory('Western')">Western</button>
-        <button class="filter-btn" onclick="filterCategory('Pret')">Pret Luxury</button>
-        <button class="filter-btn" onclick="filterCategory('Formals')">Formals</button>
-        <button class="filter-btn" onclick="filterCategory('Winter Collection')">Winter</button>
-        <button class="filter-btn" onclick="filterCategory('Fusion')">Fusion</button>
-        <button class="filter-btn" onclick="filterCategory('Festive')">Festive</button>
-        <button class="filter-btn" onclick="filterCategory('Modest Wear')">Modest Wear</button>
-        <button class="filter-btn" onclick="filterCategory('Accessories')">Accessories</button>
+        <button class="filter-btn active" onclick="filterCategory('All')">All 50 Outfits</button>
+        <button class="filter-btn" onclick="filterCategory('Women Fusion')">Women Fusion (20)</button>
+        <button class="filter-btn" onclick="filterCategory('Men Fusion')">Men Fusion (15)</button>
+        <button class="filter-btn" onclick="filterCategory('Kids Fusion')">Kids Fusion (15)</button>
     </div>
 
-    <!-- MAIN PRODUCT GRID CONTAINER -->
     <div class="products-section">
-        <div class="products-grid" id="productsGrid">
-            <!-- 50 Products dynamically rendered via JavaScript below -->
-        </div>
+        <div class="products-grid" id="productsGrid"></div>
     </div>
 
-    <!-- CART SLIDE-OUT DRAWER -->
     <div class="cart-drawer" id="cartDrawer">
         <div class="cart-header">
-            <h3>Your Shopping Bag</h3>
+            <h3>Shopping Bag</h3>
             <button class="close-cart" onclick="toggleCart()">&times;</button>
         </div>
         <div class="cart-body" id="cartItems">
-            <p style="text-align: center; color: var(--text-muted); margin-top: 40px;">Your shopping cart is empty.</p>
+            <p style="text-align: center; color: var(--secondary); margin-top: 40px; font-size: 13px;">Your bag is empty.</p>
         </div>
         <div class="cart-footer">
             <div class="cart-total">
                 <span>Total Amount:</span>
                 <span id="cartTotal">PKR 0</span>
             </div>
-            <button class="checkout-btn" onclick="handleCheckout()">Proceed to Checkout</button>
+            <button class="checkout-btn" onclick="handleCheckout()">Checkout (Cash on Delivery)</button>
         </div>
     </div>
 
-    <!-- SIGN IN / SIGN UP MODAL -->
     <div class="modal-overlay" id="authModal">
         <div class="auth-card">
             <button class="close-modal" onclick="closeAuthModal()">&times;</button>
             
-            <!-- Sign In Form -->
             <div id="signinForm">
-                <h2>Sign In to Account</h2>
+                <h2>Sign In</h2>
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="e.g. user@gmail.com" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="email@example.com" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" placeholder="••••••••" required>
                 </div>
-                <button class="auth-btn" onclick="alert('Successfully Logged In!')">Sign In</button>
+                <button class="auth-btn" onclick="alert('Signed in successfully!')">Sign In</button>
                 <div class="auth-switch">
-                    Don't have an account? <a href="#" onclick="switchAuth('signup')">Create One</a>
+                    Don't have an account? <a href="#" onclick="switchAuth('signup')">Register</a>
                 </div>
             </div>
 
-            <!-- Sign Up Form -->
             <div id="signupForm" style="display: none;">
-                <h2>Create Account</h2>
+                <h2>Register</h2>
                 <div class="form-group">
                     <label>Full Name</label>
-                    <input type="text" placeholder="e.g. Muhammad Ali" required>
+                    <input type="text" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="e.g. user@gmail.com" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="email@example.com" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
                     <input type="password" placeholder="••••••••" required>
                 </div>
-                <button class="auth-btn" onclick="alert('Account Created Successfully!')">Sign Up</button>
+                <button class="auth-btn" onclick="alert('Account created!')">Register</button>
                 <div class="auth-switch">
                     Already have an account? <a href="#" onclick="switchAuth('signin')">Sign In</a>
                 </div>
@@ -755,111 +740,106 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>ATTITUDE FASHION</h4>
-                <p style="font-size: 13px; color: #ccc; line-height: 1.6;">Pakistan's leading fashion brand delivering premium lawn, pret, luxury formals and western wear straight to your doorstep.</p>
+                <p style="font-size: 13px; color: var(--secondary); line-height: 1.6;">50 Modern Pakistani Fusion Outfits combining traditional elegance with contemporary Western cuts.</p>
             </div>
             <div class="footer-col">
-                <h4>Quick Links</h4>
+                <h4>Categories</h4>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Track Your Order</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="#shop">Women Fusion</a></li>
+                    <li><a href="#shop">Men Fusion</a></li>
+                    <li><a href="#shop">Kids Fusion</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Customer Care</h4>
+                <h4>Help</h4>
                 <ul>
-                    <li><a href="#">Shipping & Deliveries</a></li>
-                    <li><a href="#">Exchange & Returns</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Payment Options</h4>
-                <p style="font-size: 13px; color: #ccc;">Cash On Delivery (COD) Available All Over Pakistan.</p>
-                <div style="margin-top: 15px; font-size: 24px; display: flex; gap: 15px; color: #ccc;">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fas fa-money-bill-wave"></i>
-                </div>
+                <h4>Payments</h4>
+                <p style="font-size: 13px; color: var(--secondary);">Cash On Delivery (COD) available across Pakistan.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2026 ATTITUDE FASHION PK. All Rights Reserved. Designed for Excellence.
+            &copy; 2026 ATTITUDE FASHION PK. All Rights Reserved.
         </div>
     </footer>
 
-    <!-- JAVASCRIPT LOGIC -->
     <script>
-        // 50 UNIQUE COLLECTIONS DATA ARRAY
         const rawProducts = [
-            { id: 1, title: "3-Piece Embroidered Lawn Suit", category: "Unstitched", price: 3450, badge: "Best Seller", image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=500&q=80" },
-            { id: 2, title: "Printed Kurti - Soft Cotton", category: "Ready To Wear", price: 1850, badge: "New", image: "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=500&q=80" },
-            { id: 3, title: "Men's Classic White Shalwar Kameez", category: "Men Wear", price: 3950, badge: "Popular", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=500&q=80" },
-            { id: 4, title: "Girls Floral Festive Frock", category: "Kids Wear", price: 2200, badge: "Kids", image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=500&q=80" },
-            { id: 5, title: "Oversized Denim Jacket", category: "Western", price: 4200, badge: "Trendy", image: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=500&q=80" },
-            { id: 6, title: "Chiffon Dupatta Luxury Pret", category: "Pret", price: 4500, badge: "Luxury", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" },
-            { id: 7, title: "Silk Velvet Formal Shirt", category: "Formals", price: 4800, badge: "Festive", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80" },
-            { id: 8, title: "Woolen Khaddar 2-Piece Suit", category: "Winter Collection", price: 2950, badge: "Winter", image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=500&q=80" },
-            { id: 9, title: "Modern Fusion Tunic Top", category: "Fusion", price: 1950, badge: "Sale", image: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=500&q=80" },
-            { id: 10, title: "Jacquard Organza Festive Wear", category: "Festive", price: 4900, badge: "Exclusive", image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80" },
-            { id: 11, title: "Classic Black Abaya / Hijab", category: "Modest Wear", price: 3200, badge: "Modest", image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=500&q=80" },
-            { id: 12, title: "Embroidered Pashmina Shawl", category: "Accessories", price: 2500, badge: "Hot", image: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=500&q=80" },
-            { id: 13, title: "Digital Printed Lawn 3PC", category: "Unstitched", price: 2800, badge: "Lawn '26", image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80" },
-            { id: 14, title: "Solid Color Cotton Tunic", category: "Ready To Wear", price: 1650, badge: "Basic", image: "https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=500&q=80" },
-            { id: 15, title: "Men's Designer Waistcoat", category: "Men Wear", price: 3500, badge: "Groom", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" },
-            { id: 16, title: "Boys Traditional Kurta Pajama", category: "Kids Wear", price: 1950, badge: "Kids", image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80" },
-            { id: 17, title: "High-Waist Flare Denim", category: "Western", price: 2700, badge: "New", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=80" },
-            { id: 18, title: "Mirror Work Pret Kurti", category: "Pret", price: 3100, badge: "Popular", image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=500&q=80" },
-            { id: 19, title: "Heavy Embroidered Bridal Lehenga", category: "Formals", price: 4990, badge: "Luxury", image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=500&q=80" },
-            { id: 20, title: "Linen Warm Casual Shirt", category: "Winter Collection", price: 2300, badge: "Warm", image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=500&q=80" },
-            { id: 21, title: "Asymmetric Boho Chic Top", category: "Fusion", price: 2100, badge: "Chic", image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=500&q=80" },
-            { id: 22, title: "Gota Patti Festive Suit", category: "Festive", price: 4300, badge: "Eid Spcl", image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=500&q=80" },
-            { id: 23, title: "Front Open Kimono Abaya", category: "Modest Wear", price: 3600, badge: "Modest", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80" },
-            { id: 24, title: "Handcrafted Khussa Shoes", category: "Accessories", price: 1800, badge: "Handmade", image: "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&w=500&q=80" },
-            { id: 25, title: "Chunri Printed 3PC Unstitched", category: "Unstitched", price: 2650, badge: "Traditional", image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=500&q=80" },
-            { id: 26, title: "Chicken Kari Summer Kurti", category: "Ready To Wear", price: 2900, badge: "Summer", image: "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=500&q=80" },
-            { id: 27, title: "Casual Cotton Men Shirt", category: "Men Wear", price: 2100, badge: "Daily", image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80" },
-            { id: 28, title: "Little Princess Party Dress", category: "Kids Wear", price: 2400, badge: "Cute", image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=500&q=80" },
-            { id: 29, title: "Floral Printed Casual Maxi", category: "Western", price: 3100, badge: "Trendy", image: "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?auto=format&fit=crop&w=500&q=80" },
-            { id: 30, title: "Organza Sleeve Designer Top", category: "Pret", price: 2850, badge: "Stylist", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" },
-            { id: 31, title: "Sequin Embroidered Maxi", category: "Formals", price: 4750, badge: "Glam", image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=500&q=80" },
-            { id: 32, title: "Plush Fleece Hoodie", category: "Winter Collection", price: 2200, badge: "Winter", image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=500&q=80" },
-            { id: 33, title: "Peplum Style Fusion Top", category: "Fusion", price: 1850, badge: "Modern", image: "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=500&q=80" },
-            { id: 34, title: "Raw Silk Festive Kurta Set", category: "Festive", price: 4600, badge: "Silk", image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80" },
-            { id: 35, title: "Embroidered Kaftan Dress", category: "Modest Wear", price: 3400, badge: "Modest", image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=500&q=80" },
-            { id: 36, title: "Statement Gold Pearl Clutch", category: "Accessories", price: 2100, badge: "Party", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80" },
-            { id: 37, title: "Block Print 2PC Lawn Suit", category: "Unstitched", price: 2300, badge: "Block Print", image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=500&q=80" },
-            { id: 38, title: "Schiffli Embroidered Frock", category: "Ready To Wear", price: 3700, badge: "Hot", image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=500&q=80" },
-            { id: 39, title: "Men's Festive Kurta Pajama", category: "Men Wear", price: 3200, badge: "Eid Collection", image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=500&q=80" },
-            { id: 40, title: "Kids Denim dungaree", category: "Kids Wear", price: 1800, badge: "Casual", image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=500&q=80" },
-            { id: 41, title: "Crochet Knit Cardigan", category: "Western", price: 2900, badge: "Cozy", image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=500&q=80" },
-            { id: 42, title: "Digital Silk Printed Pret", category: "Pret", price: 3990, badge: "Silk", image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" },
-            { id: 43, title: "Net Thread Embroidered Anarkali", category: "Formals", price: 4950, badge: "Royal", image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=500&q=80" },
-            { id: 44, title: "Marina Woolen 3-Piece Suit", category: "Winter Collection", price: 3300, badge: "Winter", image: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=500&q=80" },
-            { id: 45, title: "High-Low Hem Tunic", category: "Fusion", price: 1750, badge: "Sale", image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80" },
-            { id: 46, title: "Zari Work Brocade Shirt", category: "Festive", price: 4250, badge: "Festive", image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=500&q=80" },
-            { id: 47, title: "Layered Chiffon Abaya", category: "Modest Wear", price: 3800, badge: "Elegance", image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=500&q=80" },
-            { id: 48, title: "Traditional Jhumka Earrings", category: "Accessories", price: 1500, badge: "Jewelry", image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80" },
-            { id: 49, title: "Satin Silk Unstitched Fabric", category: "Unstitched", price: 3100, badge: "New", image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=500&q=80" },
-            { id: 50, title: "Embroidered Velvet Shawl Kurti", category: "Ready To Wear", price: 4100, badge: "Luxury", image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=500&q=80" }
+            // WOMEN FUSION (1-20)
+            { id: 1, title: "1. Peplum Top with Tulip Shalwar", category: "Women Fusion", price: 1950, badge: "Women", image: "https://cdn.shopify.com/s/files/1/0695/9382/5523/files/Pairing-Peplum-with-Tulip-Pants-1024x991.jpg" },
+            { id: 2, title: "2. Long Cape over Crop Top & Cigarette Pants", category: "Women Fusion", price: 1980, badge: "Women", image: "http://cdn.shopify.com/s/files/1/0674/0869/1512/files/IMG_3688_480x480.jpg?v=1699541788" },
+            { id: 3, title: "3. Kaftan-Style Draped Tunic", category: "Women Fusion", price: 1850, badge: "Women", image: "https://shehrnaz.com/wp-content/uploads/2023/01/015A5853.jpg" },
+            { id: 4, title: "4. Denim Kurti with Threadwork", category: "Women Fusion", price: 1750, badge: "Women", image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=500&q=80" },
+            { id: 5, title: "5. Draped Saree-Style Gown", category: "Women Fusion", price: 1990, badge: "Women", image: "https://diademstore.com/cdn/shop/articles/WINE_RED_GOWN_720x.jpg?v=1756799508" },
+            { id: 6, title: "6. Asymmetric High-Low Kurti", category: "Women Fusion", price: 1650, badge: "Women", image: "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?auto=format&fit=crop&w=500&q=80" },
+            { id: 7, title: "7. Belted Lawn Tunic", category: "Women Fusion", price: 1550, badge: "Women", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" },
+            { id: 8, title: "8. Dhoti Pants with Short Jacket", category: "Women Fusion", price: 1900, badge: "Women", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80" },
+            { id: 9, title: "9. Front-Open Slit Kameez with Jeans", category: "Women Fusion", price: 1800, badge: "Women", image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80" },
+            { id: 10, title: "10. Angrakha-Style Wrap Top", category: "Women Fusion", price: 1700, badge: "Women", image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=500&q=80" },
+            { id: 11, title: "11. Sharara-Jumpsuit", category: "Women Fusion", price: 1950, badge: "Women", image: "https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=500&q=80" },
+            { id: 12, title: "12. Off-Shoulder Silk Kurti", category: "Women Fusion", price: 1850, badge: "Women", image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=500&q=80" },
+            { id: 13, title: "13. Palazzo Trousers with Blazer", category: "Women Fusion", price: 1990, badge: "Women", image: "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=500&q=80" },
+            { id: 14, title: "14. Shirt-Dress with Dupatta", category: "Women Fusion", price: 1750, badge: "Women", image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=500&q=80" },
+            { id: 15, title: "15. Tiered Maxi with Block Print", category: "Women Fusion", price: 1850, badge: "Women", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80" },
+            { id: 16, title: "16. Pleated Co-ord Set with Dupatta", category: "Women Fusion", price: 1900, badge: "Women", image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=500&q=80" },
+            { id: 17, title: "17. Kimono-Sleeve Pret Top", category: "Women Fusion", price: 1600, badge: "Women", image: "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=500&q=80" },
+            { id: 18, title: "18. Cowl-Neck Tunic with Bootcut Pants", category: "Women Fusion", price: 1850, badge: "Women", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" },
+            { id: 19, title: "19. Mirror-Work Crop Top & Skirt", category: "Women Fusion", price: 1950, badge: "Women", image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=500&q=80" },
+            { id: 20, title: "20. Schiffli Cold-Shoulder Top", category: "Women Fusion", price: 1650, badge: "Women", image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80" },
+
+            // MEN FUSION (21-35)
+            { id: 21, title: "21. Denim Kurta with Blue Jeans", category: "Men Fusion", price: 1850, badge: "Men", image: "http://1947clothing.com/cdn/shop/files/mens-light-blue-denim-kurta-with-regular-fit-and-band-collar-for-casual-traditional-wear-1.jpg?v=1784620595" },
+            { id: 22, title: "22. Short Black Kurta with Chinos", category: "Men Fusion", price: 1750, badge: "Men", image: "https://1947clothing.com/cdn/shop/files/Men_s_regular_fit_black_short_kurta_with_button_placket_and_classic_long-sleeve_design.jpg?v=1783430727&width=823" },
+            { id: 23, title: "23. Asymmetric Cut Kurta with Trousers", category: "Men Fusion", price: 1950, badge: "Men", image: "https://assets0.mirraw.com/images/11488134/DMSS2304_1_zoom.jpg?1709128689" },
+            { id: 24, title: "24. Ethnic Waistcoat over Western Shirt", category: "Men Fusion", price: 1900, badge: "Men", image: "https://kapok.pk/wp-content/uploads/2023/08/70-of-135-D75_0835-1024x684.jpg" },
+            { id: 25, title: "25. Kurta with Slim-Fit Denim Jeans", category: "Men Fusion", price: 1800, badge: "Men", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=500&q=80" },
+            { id: 26, title: "26. Nehru Jacket over Dress Shirt", category: "Men Fusion", price: 1950, badge: "Men", image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80" },
+            { id: 27, title: "27. Draped Cowl Kurta", category: "Men Fusion", price: 1850, badge: "Men", image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=500&q=80" },
+            { id: 28, title: "28. Short Linen Kurta with Chinos", category: "Men Fusion", price: 1650, badge: "Men", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" },
+            { id: 29, title: "29. Open Cardigan over Kurta Pajama", category: "Men Fusion", price: 1990, badge: "Men", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=80" },
+            { id: 30, title: "30. Sherwani-Style Trench Coat", category: "Men Fusion", price: 1990, badge: "Men", image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80" },
+            { id: 31, title: "31. Printed Silk Casual Kurta", category: "Men Fusion", price: 1750, badge: "Men", image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=500&q=80" },
+            { id: 32, title: "32. Low-Crotch Dhoti Trousers & Kurta", category: "Men Fusion", price: 1850, badge: "Men", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=500&q=80" },
+            { id: 33, title: "33. Double-Breasted Short Kurta", category: "Men Fusion", price: 1900, badge: "Men", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" },
+            { id: 34, title: "34. Biker-Jacket over Kurta Pajama", category: "Men Fusion", price: 1980, badge: "Men", image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=80" },
+            { id: 35, title: "35. Velvet Tuxedo Waistcoat", category: "Men Fusion", price: 1990, badge: "Men", image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80" },
+
+            // KIDS FUSION (36-50)
+            { id: 36, title: "36. Girls Indo-Western Fusion Gown", category: "Kids Fusion", price: 1850, badge: "Kids", image: "https://stylomini.pk/wp-content/uploads/2026/07/Girl_in_fusion_gown_.jpeg" },
+            { id: 37, title: "37. Girls Embroidered Tunic & Trousers", category: "Kids Fusion", price: 1650, badge: "Kids", image: "https://reekaz.com/cdn/shop/files/6e19670f-9fca-4906-ac58-b231529e7bd7.png?v=1783857955&width=3840" },
+            { id: 38, title: "38. Girls Frock Tunic with Leggings", category: "Kids Fusion", price: 1550, badge: "Kids", image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=500&q=80" },
+            { id: 39, title: "39. Girls Kurti with Denim Skirt", category: "Kids Fusion", price: 1600, badge: "Kids", image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=500&q=80" },
+            { id: 40, title: "40. Girls Sharara-Jumpsuit", category: "Kids Fusion", price: 1750, badge: "Kids", image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80" },
+            { id: 41, title: "41. Girls Sheer Mini Cape Set", category: "Kids Fusion", price: 1800, badge: "Kids", image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=500&q=80" },
+            { id: 42, title: "42. Girls Printed Lawn Maxi", category: "Kids Fusion", price: 1700, badge: "Kids", image: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=500&q=80" },
+            { id: 43, title: "43. Girls Peplum Top & Culottes", category: "Kids Fusion", price: 1650, badge: "Kids", image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=500&q=80" },
+            { id: 44, title: "44. Boys Printed Waistcoat & Shirt Set", category: "Kids Fusion", price: 1800, badge: "Kids", image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=500&q=80" },
+            { id: 45, title: "45. Boys Short Kurta with Stretch Jeans", category: "Kids Fusion", price: 1650, badge: "Kids", image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80" },
+            { id: 46, title: "46. Boys Band-Collar Shirt with Chinos", category: "Kids Fusion", price: 1550, badge: "Kids", image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=500&q=80" },
+            { id: 47, title: "47. Boys Tee under Open Kurta", category: "Kids Fusion", price: 1500, badge: "Kids", image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80" },
+            { id: 48, title: "48. Boys Asymmetric Zip Kurta", category: "Kids Fusion", price: 1700, badge: "Kids", image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=500&q=80" },
+            { id: 49, title: "49. Boys Soft Denim Kurta", category: "Kids Fusion", price: 1600, badge: "Kids", image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80" },
+            { id: 50, title: "50. Boys Printed Kurta & Shorts Set", category: "Kids Fusion", price: 1500, badge: "Kids", image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=500&q=80" }
         ];
 
         let cart = [];
 
-        // RENDER ALL 50 PRODUCTS TO THE GRID
         function renderProducts(items) {
             const grid = document.getElementById('productsGrid');
             grid.innerHTML = "";
 
             if(items.length === 0) {
-                grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted); font-size: 16px; padding: 40px;">No collections found matching your criteria.</p>`;
+                grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--secondary); font-size: 14px; padding: 40px;">No fusion products found.</p>`;
                 return;
             }
 
@@ -873,16 +853,9 @@
                         <div class="product-details">
                             <span class="product-category">${product.category}</span>
                             <h3 class="product-title">${product.title}</h3>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i> (4.8)
-                            </div>
                             <div class="product-price-row">
                                 <span class="price">PKR ${product.price.toLocaleString()}</span>
-                                <button class="add-cart-btn" onclick="addToCart(${product.id})" title="Add To Cart">
+                                <button class="add-cart-btn" onclick="addToCart(${product.id})" title="Add to bag">
                                     <i class="fas fa-plus"></i>
                                 </button>
                             </div>
@@ -892,12 +865,9 @@
             });
         }
 
-        // INITIAL LOAD
         renderProducts(rawProducts);
 
-        // CATEGORY FILTER FUNCTIONALITY
         function filterCategory(catName) {
-            // Update Active Class on Buttons
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
@@ -910,7 +880,6 @@
             }
         }
 
-        // LIVE SEARCH FILTER
         function filterProducts() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const filtered = rawProducts.filter(item => 
@@ -920,7 +889,6 @@
             renderProducts(filtered);
         }
 
-        // ADD TO CART FUNCTIONALITY
         function addToCart(id) {
             const product = rawProducts.find(p => p.id === id);
             const existing = cart.find(item => item.id === id);
@@ -932,10 +900,9 @@
             }
 
             updateCartUI();
-            toggleCart(true); // Open drawer on adding item
+            toggleCart(true);
         }
 
-        // UPDATE CART UI & CALCULATE TOTAL
         function updateCartUI() {
             const cartCount = document.getElementById('cartCount');
             const cartItems = document.getElementById('cartItems');
@@ -945,7 +912,7 @@
             cartCount.innerText = totalCount;
 
             if(cart.length === 0) {
-                cartItems.innerHTML = `<p style="text-align: center; color: var(--text-muted); margin-top: 40px;">Your shopping cart is empty.</p>`;
+                cartItems.innerHTML = `<p style="text-align: center; color: var(--secondary); margin-top: 40px; font-size: 13px;">Your bag is empty.</p>`;
                 cartTotal.innerText = `PKR 0`;
                 return;
             }
@@ -961,7 +928,7 @@
                         <div class="cart-item-details" style="flex-grow:1;">
                             <h4>${item.title}</h4>
                             <span class="cart-item-price">PKR ${item.price.toLocaleString()}</span>
-                            <div style="margin-top: 5px; font-size: 12px; display: flex; align-items: center; gap: 10px;">
+                            <div style="margin-top: 6px; font-size: 12px; display: flex; align-items: center; gap: 12px;">
                                 <span>Qty: <strong>${item.qty}</strong></span>
                                 <button onclick="removeFromCart(${item.id})" style="background:none; border:none; color:red; cursor:pointer; font-size: 11px;">Remove</button>
                             </div>
@@ -974,13 +941,11 @@
             cartTotal.innerText = `PKR ${totalPrice.toLocaleString()}`;
         }
 
-        // REMOVE FROM CART
         function removeFromCart(id) {
             cart = cart.filter(item => item.id !== id);
             updateCartUI();
         }
 
-        // TOGGLE CART DRAWER
         function toggleCart(forceOpen = false) {
             const drawer = document.getElementById('cartDrawer');
             if(forceOpen) {
@@ -990,7 +955,6 @@
             }
         }
 
-        // AUTH MODAL LOGIC (SIGN IN / SIGN UP)
         function openAuthModal(type) {
             const modal = document.getElementById('authModal');
             modal.classList.add('active');
@@ -1011,13 +975,12 @@
             }
         }
 
-        // CHECKOUT HANDLER
         function handleCheckout() {
             if(cart.length === 0) {
-                alert("Please add items to your cart before proceeding to checkout.");
+                alert("Cart is empty!");
                 return;
             }
-            alert("Thank you for shopping with ATTITUDE FASHION!\nYour Cash on Delivery Order has been placed successfully.");
+            alert("Order placed successfully via Cash on Delivery! Thank you.");
             cart = [];
             updateCartUI();
             toggleCart();
